@@ -24,5 +24,5 @@ def pwned_api_check(password):
 	response = request_api_data(first5_char)
 	return read_res(response)
 
-pwned_api_check('12345')
+pwned_api_check('1234')
 
