@@ -1,6 +1,5 @@
 import requests
 import hashlib
-import sys
 
 
 
@@ -35,11 +34,16 @@ def main(password):
 			print(f"{password} was found {count} times. You should probably change your password!")
 		else:
 			print(f"{password} was not found. Carry on!")
-		return 'Done!'	
-
-
+		
+			
+			
 
 
 if __name__ == '__main__':
-	sys.exit(main(input("Enter password to check: ")))
-
+	while True:
+		main(input("Enter password to check: "))
+		x = input("Search another password? (y/n) ") 
+		if x[0].lower() == 'y':
+			continue
+		else:	
+			break
