@@ -1,1 +1,1 @@
-# passwordchecker
+Program that searches a database of breached information (using an API) which then tells the user (based on their input) how many times their password has been used by others. Will give a recommendation on whether or not to make a new password. 
