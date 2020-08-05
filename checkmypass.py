@@ -48,12 +48,12 @@ def main(password):
 
 	Provides recommendation on whether to change password
 	"""
-		count = pwned_api_check(password)
-		if count:
-			print(f"{password} was found {count} times. You should probably change your password!")
-		else:
-			print(f"{password} was not found. Carry on!")
-		
+	count = pwned_api_check(password)
+	if count:
+		print(f"{password} was found {count} times. You should probably change your password!")
+	else:
+		print(f"{password} was not found. Carry on!")
+	
 			
 			
 
